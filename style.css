@@ -1,0 +1,45 @@
+body {
+  background-color: #e9e9e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92vh;
+}
+
+input:focus {
+  border-radius: 0px !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid #ccc !important;
+}
+
+input[name=pj_name] {
+  border: 1px solid rgba(74, 85, 214, 0.4901960784) !important;
+}
+
+input[type=submit] {
+  border-radius: 4rem !important;
+}
+
+.todo-list {
+  margin: 10px 5px;
+}
+.todo-list li.list-group-item {
+  margin-top: 1.3rem;
+  position: relative;
+  border-radius: 0.5rem;
+}
+.todo-list li.list-group-item button {
+  outline: none;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.todo-list li.list-group-item span {
+  background-color: red;
+  height: 0.4rem;
+  z-index: 999999;
+  display: block;
+  border-radius: 20px;
+}

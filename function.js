@@ -90,7 +90,6 @@ const pBar = (startTime, endTime) => {
   } else {
     wid = `width:100%; background-color:red;`;
   }
-  console.log(pWidth);
 
   return wid;
 };

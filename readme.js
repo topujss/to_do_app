@@ -52,11 +52,17 @@ const showMe = () => {
   if (allData) {
     allData.reverse().map((pro) => {
       data += `
-      <li class="list-group-item shadow mt-3">
-        Client : ${pro.cl_name} | ${pro.pj_name} | Remain time :
-        <strong>${timerRunner(pro.endTime)}</strong>
-        <button deleteList="${pro.randomId}" class="close">&Cross;</button>
-        <span style="${pBar(pro.startTime, pro.endTime)}" class="progess-bar" ></span>
+      <li class="list-group-item shadow">
+        Client : <strong class="text-success">${pro.cl_name}</strong> | ${
+        pro.pj_name
+      } | Time left: <strong>${timerRunner(pro.endTime)}</strong>
+        <button deleteList="${
+          pro.randomId
+        }" class="close text-warning bg-dark border-0 rounded-circle">&Cross;</button>
+        <span style="${pBar(
+          pro.startTime,
+          pro.endTime
+        )}" class="progess-bar progress-bar-striped progress-bar-animated mt-1" role="progressbar" ></span>
       </li>`;
     });
   }
